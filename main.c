@@ -1,31 +1,28 @@
 #include <stdio.h>
 
-void Encrpt( char complexer[], int slider); 
+int main (){ 
 
-int main() { 
-    char complexer[50]; // Complexer is an array of 50 letters  
-    int slider; 
+int x; 
 
-    printf("Enter a message to be encrpted: ");
-    scanf("%s", complexer);
-    
-    printf("Enter the amount of Slides to be completed: \n * The more slides the more encrpted your message gets\n");
-    scanf("%d", &slider); 
-    
-    Encrpt(complexer, slider); 
-    
-  return 0;
-} 
- void Encrpt( char complexer[], int slider){
-     int x = 0; 
-     
-     while (Encrpt [x] != '\0'){
-         if ((Encrpt [x] += slider) >= 65 && (Encrpt [x] += slider)< 90) {
-             Encrpt [x] += slider; 
-        } else{
-            Encrpt [x] += (slider - 25); 
-        }  
-        x++; 
+   printf("Welcome to my assessment\n Select which section you what to access:\n "); 
+   printf("1: Encrption w rotation \n 2: Decrption w rotation\n 3: Encrption w subsition\n 4: Decrption w subsition\n ");
+   printf("Please make your selection: ");
+   
+   scanf("%d", &x);
+   
+  
+    switch (x){
+    case 1: printf("You selected 1");
+        break; 
+    case 2: printf("You selected 2");
+        break;
+    case 3: printf("You selected 3");
+        break;
+    case 4: printf("You selected 4");
+        break;
+    default:
+        printf("No option selected\n You must select 1,2,3,4");
     }
-    printf("Your ecrpted message is: %s", complexer); 
+
+   return 0; 
 }
