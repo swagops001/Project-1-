@@ -1,6 +1,34 @@
 #include <stdio.h>
 
-int main(void)
+void Encrpt(char input[], int key); 
+
+int main()
 {
+
+int key = 1 ; 
+//char input;
+
+
+printf("Enter a phase to be encrpted: ");
+//scanf("%c", &input ); 
+char str[]={"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+
+Encrpt(str, key);
+
+return 0; 
+}
+
+void Encrpt(char input[], int key){
+char output; 
+int i = 0;
+while(i < 26){
+    if(input >= 65 && input <= 90)
+    output = (input + key) % 26;
     
+    printf("%c", output);
+    
+    i++;
+}
+
+    return; 
 }
