@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void Encrpt(char input[], int key); 
+void Encrpt(char input[], int key); // function protype 
 
 int main()
 {
@@ -13,12 +13,12 @@ printf("Enter a phase to be encrpted: ");
 //scanf("%c", &input ); 
 char str[]={"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
 
-Encrpt(str, key);
+Encrpt(str, key); // calling on the function
 
 return 0; 
 }
 
-void Encrpt(char input[], int key){
+void Encrpt(char input[], int key){ // The function is what does the encrption by taking the sum of the input and the key and the modulus of that sum
 char output; 
 int i = 0;
 while(i < 26){
@@ -30,5 +30,5 @@ while(i < 26){
     i++;
 }
 
-    return; 
+    return; // This will return "output" to the screen 
 }
