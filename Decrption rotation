@@ -1,0 +1,18 @@
+#included <stdio.h>
+
+void Decrpt(char input, int key);
+
+
+int main() {
+	char input; 
+	int key = 2; 
+
+Printf("Enter text to be decrpted: "); 
+scanf("%c", input); 
+
+Decrpt(input, key);
+
+	return 0; 
+}
+
+void Decrpt(char input, int key) { 
