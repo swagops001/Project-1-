@@ -1,18 +1,39 @@
-#included <stdio.h>
-
-void Decrpt(char input, int key);
+#include <stdio.h>
 
 
-int main() {
-	char input; 
-	int key = 2; 
 
-Printf("Enter text to be decrpted: "); 
-scanf("%c", input); 
+void Decrpt(char input[], int key);
 
-Decrpt(input, key);
+    int main() {
+    char *input; 
+
+int key = 2; 
+
+
+
+printf("Enter text to be decrpted: "); 
+
+// scanf("%c", input); 
+ char str[]={"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+
+Decrpt(str, key);
 
 	return 0; 
+
 }
 
-void Decrpt(char input, int key) { 
+
+void Decrpt(char input[], int key) {
+    char output; 
+    int x, i = 0; 
+    
+while(i < 26){
+    if(input >= 65 && input <= 90)
+    output = (input - key) % 26;
+    
+    printf("%c", output);
+    
+    i++;
+    }
+    return;
+}
