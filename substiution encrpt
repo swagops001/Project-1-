@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void encprt(char[], int key); 
+
+int main() { 
+
+int key = 2; 
+char* inputext = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char* encprt1 = "QWERTYUIOPASDFGHJKLZXCVBNM";
+char* encrpt2 = MNBVCXZLKJHGFDSAPOIUYTREWQ";
+
+printf("Enter the text you want encrpted\t") 
+scanf("%c", inputext) 
+
+encprt(char[], 
